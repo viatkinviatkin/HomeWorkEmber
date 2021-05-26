@@ -12,7 +12,6 @@ export default Controller.extend({
             await this.get('dataService').createAuthor(author);
             this.get('model').set('firstName', author.firstName);
             this.get('model').set('lastName', author.lastName);
-
             this.transitionToRoute('author.index');
         },
         changeFirstName(firstName){
