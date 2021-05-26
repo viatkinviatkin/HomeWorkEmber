@@ -1,0 +1,25 @@
+<div class="panel-heading">
+  <div class="search">
+    {{input type="text" placeholder="Search by Author Name" value=search}}
+  </div>
+
+    {{#link-to "author.create" class="btn-new"}}
+      <div class="sr-only">Add new Author</div>
+    {{/link-to}}
+</div>
+
+{{#if isLoading}}
+      <div class="welcome-page">
+        <img src="/loading.gif" alt="Welcome">
+      </div>
+{{else}}
+<div class="panel-content">
+  <h3 class="panel-title">Authors</h3>
+  <ul class="collection">
+        {{#each model as |author|}}
+           {{author-item author=author tagName='li' idAuthor=author.id}}
+        {{/each}}
+    </ul>
+  </div>
+  {{/if}}
+{{outlet}}

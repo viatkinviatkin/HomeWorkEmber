@@ -1,0 +1,15 @@
+ <form onsubmit={{action "submitForm"}}>
+          <div class="field">
+              <label>First name</label>
+              {{input type="text" placeholder="First Name" value=author.firstName}}
+          </div>
+
+          <div class="field">
+              <label>Last name:</label>
+              {{input type="text" placeholder="Last Name" value=author.lastName}}
+          </div>
+
+          <div class="form-footer">
+              <button type = "submit" class="btn-submit">Save</button>
+          </div>
+      </form>
