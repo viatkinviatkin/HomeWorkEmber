@@ -2,11 +2,8 @@ import Controller from '@ember/controller';
 import { inject as service } from '@ember/service';
 import EmberObject from '@ember/object'
 
-export default Controller.extend({
-
-    
+export default Controller.extend({    
     dataService: service('data'),
-
     actions:{
        async saveAuthor(author){
             await this.get('dataService').createAuthor(author);
