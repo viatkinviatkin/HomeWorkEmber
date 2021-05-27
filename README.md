@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # приложение-books-demo
-
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
 
 ## Prerequisites
 
@@ -18,6 +14,7 @@ You will need the following things properly installed on your computer.
 * `git clone <repository-url>` this repository
 * `cd приложение-books-demo`
 * `npm install`
+* `json-server --watch tests/test-data/db.json --port 3001` запуск json-сервера 
 
 ## Running / Development
 
@@ -43,10 +40,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 * `ember build` (development)
 * `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
